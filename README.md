@@ -1,7 +1,6 @@
 # การส่งการบ้าน - Kafka Streams Pipeline
 
 **วิชา:** DE241  
-**ที่ส่ง:** `/Users/athens/241DE/Lab_Kafka_Streams_Pipeline`
 
 ---
 
