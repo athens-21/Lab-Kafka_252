@@ -4,21 +4,6 @@
 
 ---
 
-## โครงสร้าง Pipeline
-
-```
-Producer → เขียนข้อมูลลง Streaming Log (Kafka) ที่ topic transaction-raw
-                                    ↓
-Stream Processing → อ่านจาก Streaming Log (Kafka) (transaction-raw) ⬆️
-                  → ประมวลผล (คำนวณ total_amount)
-                  → เขียนกลับเข้า Streaming Log (Kafka) (transaction-processed) ⬇️
-                                    ↓
-Consumer → อ่านจาก Streaming Log (Kafka) (transaction-processed) ⬆️
-         → Export เป็น CSV file ➡️
-```
-
----
-
 ## ไฟล์ในโปรเจกต์
 
 - `producer.py` - ส่งข้อมูล transaction ไปยัง Kafka
